@@ -1,0 +1,23 @@
+body {
+    background-color: lightgray;
+}
+
+.employee-form__form {
+    background-color: white;
+    width: 350px;
+
+    margin: 20px;
+    padding: 20px;
+
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.employee-form__form > h1 {
+    text-align: center;
+}
