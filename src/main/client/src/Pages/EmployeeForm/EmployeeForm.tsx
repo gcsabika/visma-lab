@@ -13,7 +13,7 @@ export type EmployeeFormProps = {
 export function EmployeeForm(props: EmployeeFormProps) {
 
     return (
-        <form autoCapitalize={'off'} className={"employee-form__form"}>
+        <form autoComplete={'off'} className={"employee-form__form"}>
             <h1>Employee</h1>
             <TextField
                 value={props.employee.firstName}
@@ -32,7 +32,21 @@ export function EmployeeForm(props: EmployeeFormProps) {
                 onChange={(e) => {
                     const newEmployee: Employee = {...props.employee, lastName: e.currentTarget.value}
                     props.setEmployee(newEmployee)
-            }}/>
+            }}
+                error={props.error.lastName !== undefined}
+                helperText={props.error.lastName}
+            />
+
+            <TextField
+                value={props.employee.salary}
+                label={'salary'}
+                onChange={(e) => {
+                    const newEmployee: Employee = {...props.employee, salary: +e.currentTarget.value}
+                    props.setEmployee(newEmployee)
+                }}
+                error={props.error.salary!==undefined}
+                helperText={props.error.salary}
+            />
 
             <Button variant={"contained"} onClick={(e)=> {
                 console.log(props.submit)

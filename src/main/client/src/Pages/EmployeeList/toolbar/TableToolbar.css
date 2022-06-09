@@ -1,0 +1,8 @@
+.employee-list__table-toolbar{
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}

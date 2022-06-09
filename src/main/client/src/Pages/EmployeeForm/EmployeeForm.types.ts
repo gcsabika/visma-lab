@@ -1,4 +1,5 @@
 export interface Employee {
+    id: number | null,
     firstName: string,
     lastName: string,
     salary: number,
@@ -9,6 +10,7 @@ export type EmployeeError = {
 }
 
 export const blankEmployee: Employee= {
+    id: null,
     firstName: '',
     lastName: '',
     salary: 0

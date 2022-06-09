@@ -1,0 +1,19 @@
+body {
+    background-color: lightgray;
+}
+
+.employee-list__table {
+    background-color: white;
+
+    margin: 20px;
+
+    max-width: 90%;
+
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+
+}
+
+.employee-form__form > h1 {
+    text-align: center;
+}
